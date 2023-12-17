@@ -1,11 +1,11 @@
 # README
 
-## GROUP <Group 13>
+## GROUP Group 13
 
-- Member 1: <Nguyen Thi Ngoc Bich>
-- Member 2: <Nguyen Mai Truc>
-- Member 3: <Nguyen Thuy Linh>
-- Member 4: <Do Thi Huong Ly>
+- Member 1: Nguyen Thi Ngoc Bich
+- Member 2: Nguyen Mai Truc
+- Member 3: Nguyen Thuy Linh
+- Member 4: Do Thi Huong Ly
 
 ## Starting server
 
