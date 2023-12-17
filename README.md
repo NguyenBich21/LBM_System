@@ -1,6 +1,6 @@
 # README
 
-## GROUP Group 13
+## GROUP 13
 
 - Member 1: Nguyen Thi Ngoc Bich
 - Member 2: Nguyen Mai Truc
