@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  coupon_borrow_id: 1
+  student_id: 1
+  borrow_time: 2023-12-21 22:35:51
+  isbd: MyString
+  quantity: MyString
+  return_date: 2023-12-21
+  librarian_id: 1
+
+two:
+  coupon_borrow_id: 1
+  student_id: 1
+  borrow_time: 2023-12-21 22:35:51
+  isbd: MyString
+  quantity: MyString
+  return_date: 2023-12-21
+  librarian_id: 1

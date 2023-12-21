@@ -1,0 +1,25 @@
+<div class="max-w-3xl mx-auto px-4">
+  <div class="flex items-center justify-between">
+    <h1 class="flex-1 font-bold text-3xl">Language</h1>
+
+    <div class="flex-wrap lg:flex items-center lg:space-x-3">
+      <%= link_to languages_path, class: button_class(theme: "transparent") do %>
+      All Languages
+      <% end %>
+      <%= link_to edit_language_path(@language), class: button_class(theme:"primary") do %>
+      Edit
+      <% end %>
+    </div>
+  </div>
+
+  <ul class="text-slate-700">
+      <li>
+        <p class="font-semibold">Language:</p>
+        <p><%= @language.language_id %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Laguage:</p>
+        <p><%= @language.laguage %></p>
+      </li>
+  </ul>
+</div>

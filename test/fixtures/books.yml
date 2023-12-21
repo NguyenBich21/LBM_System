@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  isbd: MyString
+  title: MyString
+  number_of_page: 1
+  quantity: MyString
+  publishing_year: 2023-12-21
+  classification_id: 1
+  publisher_id: 1
+  language_id: 1
+  author_id: 1
+  location_id: 1
+  date_added: 2023-12-21 21:57:34
+  student_id: 1
+  book_status: false
+
+two:
+  isbd: MyString
+  title: MyString
+  number_of_page: 1
+  quantity: MyString
+  publishing_year: 2023-12-21
+  classification_id: 1
+  publisher_id: 1
+  language_id: 1
+  author_id: 1
+  location_id: 1
+  date_added: 2023-12-21 21:57:34
+  student_id: 1
+  book_status: false

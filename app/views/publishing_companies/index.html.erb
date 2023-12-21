@@ -1,0 +1,39 @@
+
+
+
+<div class="container mx-auto px-4">
+  <div class="flex items-center justify-between flex-wrap mb-6">
+    <h1 class="text-3xl font-bold">Publishing_companies</h1>
+
+    <%= link_to new_publishing_company_path, class: button_class(theme: "primary") do %>
+    Add New Publishing company
+    <% end %>
+  </div>
+
+  <table class="table-auto border-collapse border-slate-400 w-full">
+    <thead class="bg-slate-50 dark:bg-slate-700">
+      <tr>
+        
+          <th class="border border-slate-300 dark:border-slate-600 font-semibold p-4 text-slate-900 dark:text-slate-200 text-left">Name</th>
+        
+                  <th class="border border-slate-300 dark:border-slate-600 font-semibold p-4 text-slate-900 dark:text-slate-200 text-left">Publisher</th>
+                
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @publishing_companies.each do |publishing_company| %>
+      <%= content_tag :tr, id: dom_id(publishing_company), class: dom_class(publishing_company) do %>
+      
+        <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"><%= link_to publishing_company.name, publishing_company %></td>
+      
+
+              <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400"><%= publishing_company.publisher_id %></td>
+      
+      
+      <% end %>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+</div>

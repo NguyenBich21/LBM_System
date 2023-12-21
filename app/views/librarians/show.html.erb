@@ -1,0 +1,29 @@
+<div class="max-w-3xl mx-auto px-4">
+  <div class="flex items-center justify-between">
+    <h1 class="flex-1 font-bold text-3xl">Librarian</h1>
+
+    <div class="flex-wrap lg:flex items-center lg:space-x-3">
+      <%= link_to librarians_path, class: button_class(theme: "transparent") do %>
+      All Librarians
+      <% end %>
+      <%= link_to edit_librarian_path(@librarian), class: button_class(theme:"primary") do %>
+      Edit
+      <% end %>
+    </div>
+  </div>
+
+  <ul class="text-slate-700">
+      <li>
+        <p class="font-semibold">Librarian:</p>
+        <p><%= @librarian.librarian_id %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Name:</p>
+        <p><%= @librarian.name %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Phone number:</p>
+        <p><%= @librarian.phone_number %></p>
+      </li>
+  </ul>
+</div>

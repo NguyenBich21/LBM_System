@@ -1,0 +1,25 @@
+<div class="max-w-3xl mx-auto px-4">
+  <div class="flex items-center justify-between">
+    <h1 class="flex-1 font-bold text-3xl">Classify</h1>
+
+    <div class="flex-wrap lg:flex items-center lg:space-x-3">
+      <%= link_to classifies_path, class: button_class(theme: "transparent") do %>
+      All Classifies
+      <% end %>
+      <%= link_to edit_classify_path(@classify), class: button_class(theme:"primary") do %>
+      Edit
+      <% end %>
+    </div>
+  </div>
+
+  <ul class="text-slate-700">
+      <li>
+        <p class="font-semibold">Classification:</p>
+        <p><%= @classify.classification_id %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Type:</p>
+        <p><%= @classify.type %></p>
+      </li>
+  </ul>
+</div>

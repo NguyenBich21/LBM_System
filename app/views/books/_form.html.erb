@@ -1,0 +1,74 @@
+<%= form_with(model: book) do |form| %>
+<% if book.errors.any? %>
+<div id="error_explanation" class="bg-red-50 p-6 rounded text-red-800">
+  <h2 class="text-lg font-semibold mb-3"><%= pluralize(book.errors.count, "error") %> prohibited this book from being saved:</h2>
+
+  <ul class="list-disc leading-relaxed">
+    <% book.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+    <% end %>
+  </ul>
+</div>
+<% end %>
+
+  <div class="mb-6">
+        <%= form.label :isbd, class: label_class %>
+          <%= form.text_field :isbd, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :title, class: label_class %>
+          <%= form.text_field :title, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :number_of_page, class: label_class %>
+          <%= form.number_field :number_of_page, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :quantity, class: label_class %>
+          <%= form.text_field :quantity, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :publishing_year, class: label_class %>
+          <%= form.date_field :publishing_year, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :classification_id, class: label_class %>
+          <%= form.number_field :classification_id, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :publisher_id, class: label_class %>
+          <%= form.number_field :publisher_id, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :language_id, class: label_class %>
+          <%= form.number_field :language_id, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :author_id, class: label_class %>
+          <%= form.number_field :author_id, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :location_id, class: label_class %>
+          <%= form.number_field :location_id, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :date_added, class: label_class %>
+          <%= form.datetime_field :date_added, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :student_id, class: label_class %>
+          <%= form.number_field :student_id, class: input_class %>
+      </div>
+  <div class="mb-6">
+        <%= form.label :book_status, class: label_class %>
+          <%= form.check_box :book_status, class: input_class %>
+      </div>
+
+<%= form.submit class: button_class(theme: 'primary') %>
+
+<% if book.persisted? %>
+<%= link_to "Cancel", book, class: "text-neutral-700 underline inline-block ml-3" %>
+<% else %>
+<%= link_to "Cancel", books_path, class:  "text-neutral-700 underline inline-block ml-3" %>
+<% end %>
+<% end %>

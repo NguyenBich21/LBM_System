@@ -1,0 +1,69 @@
+<div class="max-w-3xl mx-auto px-4">
+  <div class="flex items-center justify-between">
+    <h1 class="flex-1 font-bold text-3xl">Book</h1>
+
+    <div class="flex-wrap lg:flex items-center lg:space-x-3">
+      <%= link_to books_path, class: button_class(theme: "transparent") do %>
+      All Books
+      <% end %>
+      <%= link_to edit_book_path(@book), class: button_class(theme:"primary") do %>
+      Edit
+      <% end %>
+    </div>
+  </div>
+
+  <ul class="text-slate-700">
+      <li>
+        <p class="font-semibold">Isbd:</p>
+        <p><%= @book.isbd %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Title:</p>
+        <p><%= @book.title %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Number of page:</p>
+        <p><%= @book.number_of_page %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Quantity:</p>
+        <p><%= @book.quantity %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Publishing year:</p>
+        <p><%= @book.publishing_year %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Classification:</p>
+        <p><%= @book.classification_id %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Publisher:</p>
+        <p><%= @book.publisher_id %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Language:</p>
+        <p><%= @book.language_id %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Author:</p>
+        <p><%= @book.author_id %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Location:</p>
+        <p><%= @book.location_id %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Date added:</p>
+        <p><%= @book.date_added %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Student:</p>
+        <p><%= @book.student_id %></p>
+      </li>
+      <li>
+        <p class="font-semibold">Book status:</p>
+        <p><%= @book.book_status %></p>
+      </li>
+  </ul>
+</div>

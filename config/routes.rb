@@ -11,4 +11,15 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "home#index"
+  resources :books
+  resources :book_borrows
+  resources :publishing_companies
+  resources :classifies
+  resources :languages
+  resources :authors
+  resources :storage_locations
+  resources :departments
+  resources :students
+  resources :coupon_borrows
+  resources :librarians
 end
